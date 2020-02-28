@@ -16,9 +16,9 @@ try {
     $conn = new PDO($dsn, $username, $password);
 
 // display a message if connected to database successfully
-if ($conn) {
-    echo "Connected to the <strong>$db</strong> database successfully!";
-}
+    if ($conn) {
+        echo "Connected to the <strong>$db</strong> database successfully!";
+    }
 } catch (PDOException $e) {
     // report error message
     echo $e->getMessage();
